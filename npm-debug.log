@@ -1,13 +1,14 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   '-g',
 1 verbose cli   'install',
-1 verbose cli   'gulp-handlebars@3.0.3' ]
+1 verbose cli   'handlebars@1.3.0' ]
 2 info using npm@1.4.28
-3 info using node@v0.10.32
-4 verbose readDependencies using package.json deps
-5 verbose cache add [ 'gulp-handlebars@3.0.3', null ]
-6 verbose cache add name=undefined spec="gulp-handlebars@3.0.3" args=["gulp-handlebars@3.0.3",null]
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'handlebars@1.3.0', null ]
+6 verbose cache add name=undefined spec="handlebars@1.3.0" args=["handlebars@1.3.0",null]
 7 verbose parsed url { protocol: null,
 7 verbose parsed url   slashes: null,
 7 verbose parsed url   auth: null,
@@ -17,10 +18,10 @@
 7 verbose parsed url   hash: null,
 7 verbose parsed url   search: null,
 7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'gulp-handlebars@3.0.3',
-7 verbose parsed url   path: 'gulp-handlebars@3.0.3',
-7 verbose parsed url   href: 'gulp-handlebars@3.0.3' }
-8 verbose cache add name="gulp-handlebars" spec="3.0.3" args=["gulp-handlebars","3.0.3"]
+7 verbose parsed url   pathname: 'handlebars@1.3.0',
+7 verbose parsed url   path: 'handlebars@1.3.0',
+7 verbose parsed url   href: 'handlebars@1.3.0' }
+8 verbose cache add name="handlebars" spec="1.3.0" args=["handlebars","1.3.0"]
 9 verbose parsed url { protocol: null,
 9 verbose parsed url   slashes: null,
 9 verbose parsed url   auth: null,
@@ -30,49 +31,128 @@
 9 verbose parsed url   hash: null,
 9 verbose parsed url   search: null,
 9 verbose parsed url   query: null,
-9 verbose parsed url   pathname: '3.0.3',
-9 verbose parsed url   path: '3.0.3',
-9 verbose parsed url   href: '3.0.3' }
-10 verbose addNamed [ 'gulp-handlebars', '3.0.3' ]
-11 verbose addNamed [ '3.0.3', '3.0.3' ]
-12 silly lockFile a31866d5-gulp-handlebars-3-0-3 gulp-handlebars@3.0.3
-13 verbose lock gulp-handlebars@3.0.3 /Users/jon/.npm/a31866d5-gulp-handlebars-3-0-3.lock
-14 verbose request where is /gulp-handlebars
+9 verbose parsed url   pathname: '1.3.0',
+9 verbose parsed url   path: '1.3.0',
+9 verbose parsed url   href: '1.3.0' }
+10 verbose addNamed [ 'handlebars', '1.3.0' ]
+11 verbose addNamed [ '1.3.0', '1.3.0' ]
+12 silly lockFile 15405714-handlebars-1-3-0 handlebars@1.3.0
+13 verbose lock handlebars@1.3.0 /home/vagrant/.npm/15405714-handlebars-1-3-0.lock
+14 verbose request where is /handlebars
 15 verbose request registry https://registry.npmjs.org/
-16 verbose request id b41892a552ed6619
-17 verbose url raw /gulp-handlebars
-18 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-handlebars' ]
-19 verbose url resolved https://registry.npmjs.org/gulp-handlebars
-20 verbose request where is https://registry.npmjs.org/gulp-handlebars
-21 info trying registry request attempt 1 at 19:04:06
-22 verbose etag "DUCY4RTQQWFZFJXY0P7L017IC"
-23 http GET https://registry.npmjs.org/gulp-handlebars
-24 http 304 https://registry.npmjs.org/gulp-handlebars
+16 verbose request id 94f0179526aab632
+17 verbose url raw /handlebars
+18 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+19 verbose url resolved https://registry.npmjs.org/handlebars
+20 verbose request where is https://registry.npmjs.org/handlebars
+21 info trying registry request attempt 1 at 02:50:56
+22 verbose etag "BAK7Z36TT2EQUA6IZRWT8Q3AC"
+23 http GET https://registry.npmjs.org/handlebars
+24 http 304 https://registry.npmjs.org/handlebars
 25 silly registry.get cb [ 304,
-25 silly registry.get   { date: 'Sat, 08 Aug 2015 00:04:07 GMT',
+25 silly registry.get   { date: 'Sat, 08 Aug 2015 02:50:55 GMT',
 25 silly registry.get     via: '1.1 varnish',
 25 silly registry.get     'cache-control': 'max-age=60',
-25 silly registry.get     etag: '"DUCY4RTQQWFZFJXY0P7L017IC"',
+25 silly registry.get     etag: '"BAK7Z36TT2EQUA6IZRWT8Q3AC"',
 25 silly registry.get     age: '0',
 25 silly registry.get     connection: 'keep-alive',
-25 silly registry.get     'x-served-by': 'cache-dfw1825-DFW',
-25 silly registry.get     'x-cache': 'MISS',
-25 silly registry.get     'x-cache-hits': '0',
-25 silly registry.get     'x-timer': 'S1438992247.194573,VS0,VE46',
+25 silly registry.get     'x-served-by': 'cache-dfw1834-DFW',
+25 silly registry.get     'x-cache': 'HIT',
+25 silly registry.get     'x-cache-hits': '1',
+25 silly registry.get     'x-timer': 'S1439002255.137187,VS0,VE68',
 25 silly registry.get     vary: 'Accept' } ]
-26 verbose etag https://registry.npmjs.org/gulp-handlebars from cache
-27 silly lockFile a31866d5-gulp-handlebars-3-0-3 gulp-handlebars@3.0.3
-28 silly lockFile a31866d5-gulp-handlebars-3-0-3 gulp-handlebars@3.0.3
-29 error Error: version not found: gulp-handlebars@3.0.3
-29 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:125:12
-29 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
-29 error     at Object.oncomplete (fs.js:107:15)
-30 error If you need help, you may report this *entire* log,
-30 error including the npm and node versions, at:
-30 error     <http://github.com/npm/npm/issues>
-31 error System Darwin 14.4.0
-32 error command "node" "/usr/local/bin/npm" "install" "gulp-handlebars@3.0.3"
-33 error cwd /Users/jon/Sites/homestead
-34 error node -v v0.10.32
-35 error npm -v 1.4.28
-36 verbose exit [ 1, true ]
+26 verbose etag https://registry.npmjs.org/handlebars from cache
+27 silly lockFile 15405714-handlebars-1-3-0 handlebars@1.3.0
+28 silly lockFile 15405714-handlebars-1-3-0 handlebars@1.3.0
+29 silly resolved [ { name: 'handlebars',
+29 silly resolved     barename: 'handlebars',
+29 silly resolved     version: '1.3.0',
+29 silly resolved     description: 'Handlebars provides the power necessary to let you build semantic templates effectively with no frustration',
+29 silly resolved     homepage: 'http://www.handlebarsjs.com/',
+29 silly resolved     keywords: [ 'handlebars', 'mustache', 'template', 'html' ],
+29 silly resolved     repository:
+29 silly resolved      { type: 'git',
+29 silly resolved        url: 'https://github.com/wycats/handlebars.js.git' },
+29 silly resolved     author: { name: 'Yehuda Katz' },
+29 silly resolved     license: 'MIT',
+29 silly resolved     engines: { node: '>=0.4.7' },
+29 silly resolved     dependencies: { optimist: '~0.3', 'uglify-js': '~2.3' },
+29 silly resolved     optionalDependencies: { 'uglify-js': '~2.3' },
+29 silly resolved     devDependencies:
+29 silly resolved      { async: '~0.2.9',
+29 silly resolved        'aws-sdk': '~1.5.0',
+29 silly resolved        benchmark: '~1.0',
+29 silly resolved        'dustjs-linkedin': '~2.0.2',
+29 silly resolved        eco: '~1.1.0-rc-3',
+29 silly resolved        grunt: '~0.4.1',
+29 silly resolved        'grunt-cli': '~0.1.10',
+29 silly resolved        'grunt-contrib-clean': '~0.4.1',
+29 silly resolved        'grunt-contrib-concat': '~0.3.0',
+29 silly resolved        'grunt-contrib-connect': '~0.5.0',
+29 silly resolved        'grunt-contrib-copy': '~0.4.1',
+29 silly resolved        'grunt-contrib-jshint': '0.x',
+29 silly resolved        'grunt-contrib-requirejs': '~0.4.1',
+29 silly resolved        'grunt-contrib-uglify': '~0.2.2',
+29 silly resolved        'grunt-contrib-watch': '~0.5.3',
+29 silly resolved        'grunt-saucelabs': '~4.1.2',
+29 silly resolved        'es6-module-packager': '0.x',
+29 silly resolved        jison: '~0.3.0',
+29 silly resolved        'keen.io': '0.0.3',
+29 silly resolved        mocha: '*',
+29 silly resolved        mustache: '~0.7.2',
+29 silly resolved        semver: '~2.1.0',
+29 silly resolved        underscore: '~1.5.1' },
+29 silly resolved     main: 'lib/index.js',
+29 silly resolved     bin: { handlebars: 'bin/handlebars' },
+29 silly resolved     scripts: { test: 'grunt' },
+29 silly resolved     bugs: { url: 'https://github.com/wycats/handlebars.js/issues' },
+29 silly resolved     _id: 'handlebars@1.3.0',
+29 silly resolved     dist:
+29 silly resolved      { shasum: '9e9b130a93e389491322d975cf3ec1818c37ce34',
+29 silly resolved        tarball: 'http://registry.npmjs.org/handlebars/-/handlebars-1.3.0.tgz' },
+29 silly resolved     _from: 'handlebars@1.3.0',
+29 silly resolved     _npmVersion: '1.3.11',
+29 silly resolved     _npmUser: { name: 'kpdecker', email: 'kpdecker@gmail.com' },
+29 silly resolved     maintainers: [ [Object] ],
+29 silly resolved     directories: {},
+29 silly resolved     _shasum: '9e9b130a93e389491322d975cf3ec1818c37ce34',
+29 silly resolved     _resolved: 'https://registry.npmjs.org/handlebars/-/handlebars-1.3.0.tgz',
+29 silly resolved     readme: 'ERROR: No README data found!' } ]
+30 info install handlebars@1.3.0 into /usr/lib
+31 info installOne handlebars@1.3.0
+32 verbose lib/node_modules/handlebars unbuild
+33 verbose tar unpack /home/vagrant/.npm/handlebars/1.3.0/package.tgz
+34 silly lockFile 304a68a2--usr-lib-node-modules-handlebars tar:///usr/lib/node_modules/handlebars
+35 verbose lock tar:///usr/lib/node_modules/handlebars /home/vagrant/.npm/304a68a2--usr-lib-node-modules-handlebars.lock
+36 silly lockFile ab828d95-npm-handlebars-1-3-0-package-tgz tar:///home/vagrant/.npm/handlebars/1.3.0/package.tgz
+37 verbose lock tar:///home/vagrant/.npm/handlebars/1.3.0/package.tgz /home/vagrant/.npm/ab828d95-npm-handlebars-1-3-0-package-tgz.lock
+38 silly gunzTarPerm modes [ '775', '664' ]
+39 error Error: EACCES, mkdir '/usr/lib/node_modules/handlebars'
+39 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/handlebars']
+39 error   errno: 3,
+39 error   code: 'EACCES',
+39 error   path: '/usr/lib/node_modules/handlebars',
+39 error   fstream_type: 'Directory',
+39 error   fstream_path: '/usr/lib/node_modules/handlebars',
+39 error   fstream_class: 'DirWriter',
+39 error   fstream_stack:
+39 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+39 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+39 error      'Object.oncomplete (fs.js:108:15)' ] }
+40 error Please try running this command again as root/Administrator.
+41 error System Linux 3.13.0-24-generic
+42 error command "/usr/bin/node" "/usr/bin/npm" "-g" "install" "handlebars@1.3.0"
+43 error cwd /home/vagrant/Code
+44 error node -v v0.10.37
+45 error npm -v 1.4.28
+46 error path /usr/lib/node_modules/handlebars
+47 error fstream_path /usr/lib/node_modules/handlebars
+48 error fstream_type Directory
+49 error fstream_class DirWriter
+50 error code EACCES
+51 error errno 3
+52 error stack Error: EACCES, mkdir '/usr/lib/node_modules/handlebars'
+53 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+53 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+53 error fstream_stack Object.oncomplete (fs.js:108:15)
+54 verbose exit [ 3, true ]

@@ -29,9 +29,14 @@
                                 </button>
                             </td>
                             <td>
-                                <button class="btn btn-danger get-todos" data-id="{{ $user->api_id }}">
-                                    <i class="glyphicon glyphicon-tasks"></i>
-                                </button>
+                                <div class="btn-group">
+                                    <button class="btn btn-danger get-todos dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-id="{{ $user->api_id }}">
+                                        <i class="glyphicon glyphicon-tasks"></i>
+                                    </button>
+                                    <ul class="dropdown-menu task-list" data-id="{{ $user->id }}">
+
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                     @endforeach
@@ -50,6 +55,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script src="/js/app.js"></script>
-    <script src="/js/handlebars.runtime-v3.0.3.js"></script>
+    <script src="/js/handlebars.runtime.js"></script>
     <script src="/js/template.js"></script>
 </html>

@@ -17,7 +17,7 @@ gulp.task('handlebars', function()
             wrapped: true
         }))
         .pipe(declare({
-            namespace: 'test_app_hb.templates'
+            namespace: 'Handlebars.templates'
         }))
         .pipe(concat("template.js"))
         .pipe(gulp.dest(paths.handlebars.output));
